@@ -7,7 +7,7 @@
     <groupId>com.github.burchard36</groupId>
     <artifactId>PatheticNPCs</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
 
     <name>PatheticNPCs</name>
 
@@ -21,7 +21,8 @@
     </build>
 
     <modules>
-        <module>PatheticMain</module>
         <module>Pathetic1_19_R0_1</module>
+        <module>PatheticPlugin</module>
+        <module>PatheticNPCApi</module>
     </modules>
 </project>

@@ -1,20 +1,24 @@
 package com.burchard36.patheticmain.nms.v1_19_0;
 
-import com.burchard36.patheticmain.nms.NMSHelper;
-import com.burchard36.patheticmain.nms.NPCBuilder;
+import com.burchard36.patheticmain.NMSHelper;
+import com.burchard36.patheticmain.NPCBuilder;
 import com.burchard36.patheticmain.nms.v1_19_0.entity.PatheticPlayer;
 import net.minecraft.server.level.ServerPlayer;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.craftbukkit.v1_19_R1.entity.CraftPlayer;
 import org.bukkit.entity.Player;
-import org.checkerframework.checker.nullness.qual.NonNull;
+
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+import java.util.concurrent.Executor;
+import java.util.concurrent.Executors;
 
 public class NMSHelper1_19_0 implements NMSHelper {
+
+    public static Executor THREAD_POOL = Executors.newWorkStealingPool();
 
     public NMSHelper1_19_0() {
 
@@ -32,7 +36,7 @@ public class NMSHelper1_19_0 implements NMSHelper {
 
     @Override
     @SuppressWarnings("unchecked")
-    public PatheticPlayer createPlayerEntity(@NonNull NPCBuilder builder) {
+    public PatheticPlayer createPlayerEntity(NPCBuilder builder) {
         return new PatheticPlayer(builder.getSpawnLocation(), builder.getNpcName(), this);
     }
 
@@ -52,4 +56,6 @@ public class NMSHelper1_19_0 implements NMSHelper {
     public ServerPlayer convertToNms(Player player) {
         return ((CraftPlayer) player).getHandle();
     }
+
+
 }

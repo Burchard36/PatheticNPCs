@@ -1,8 +1,8 @@
 package com.burchard36.patheticmain.nms.v1_19_0.entity;
 
-import com.burchard36.patheticmain.impl.CallbackVoid;
-import com.burchard36.patheticmain.impl.PatheticNPC;
-import com.burchard36.patheticmain.nms.NMSHelper;
+import com.burchard36.patheticmain.NMSHelper;
+import com.burchard36.patheticmain.CallbackVoid;
+import com.burchard36.patheticmain.PatheticNPC;
 import com.mojang.authlib.GameProfile;
 import net.minecraft.network.protocol.game.ClientboundAddPlayerPacket;
 import net.minecraft.network.protocol.game.ClientboundPlayerInfoPacket;
@@ -21,7 +21,7 @@ import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicReference;
 
-import static com.burchard36.patheticmain.PatheticPlugin.THREAD_POOL;
+import static com.burchard36.patheticmain.nms.v1_19_0.NMSHelper1_19_0.THREAD_POOL;
 import static com.burchard36.patheticmain.util.TaskRunner.runTask;
 
 /**

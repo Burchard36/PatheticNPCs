@@ -1,13 +1,16 @@
 package com.burchard36.patheticmain.util;
 
-import com.burchard36.patheticmain.impl.CallbackVoid;
+import com.burchard36.patheticmain.CallbackVoid;
 import org.bukkit.Bukkit;
+import org.bukkit.plugin.Plugin;
+import org.bukkit.plugin.java.JavaPlugin;
 
 import javax.annotation.Nullable;
 
-import static com.burchard36.patheticmain.PatheticPlugin.TASK_INSTANCE;
 
 public class TaskRunner {
+
+    protected static Plugin instance = Bukkit.getPluginManager().getPlugin("PatheticNPCs");
 
     /**
      * Runs a Task back onto the main thread using the BukkitScheduler
@@ -27,7 +30,7 @@ public class TaskRunner {
      * @param whenComplete {@link CallbackVoid} lambda to run
      */
     public static void runTask(Runnable runnable, @Nullable CallbackVoid whenComplete) {
-        Bukkit.getScheduler().runTask(TASK_INSTANCE, () -> {
+        Bukkit.getScheduler().runTask(instance, () -> {
             runnable.run();
             if (whenComplete != null) whenComplete.onComplete();
         });

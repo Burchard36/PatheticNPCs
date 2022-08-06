@@ -1,4 +1,4 @@
-package com.burchard36.patheticmain.impl;
+package com.burchard36.patheticmain;
 
 import org.bukkit.Location;
 import org.bukkit.entity.EntityType;

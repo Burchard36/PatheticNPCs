@@ -77,11 +77,18 @@
             <version>1.18.24</version>
             <scope>provided</scope>
         </dependency>
-
+        <dependency>
+            <groupId>com.burchard36.patheticmain</groupId>
+            <artifactId>PatheticNPCApi</artifactId>
+            <version>1.0.0</version>
+            <scope>compile</scope>
+        </dependency>
         <dependency>
             <groupId>com.burchard36.patheticmain.nms.v1_19_0</groupId>
             <artifactId>Pathetic1_19_R0_1</artifactId>
             <version>1.0.0</version>
+            <scope>compile</scope>
         </dependency>
+
     </dependencies>
 </project>

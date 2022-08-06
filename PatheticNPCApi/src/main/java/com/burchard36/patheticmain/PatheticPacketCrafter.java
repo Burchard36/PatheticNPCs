@@ -1,4 +1,4 @@
-package com.burchard36.patheticmain.impl;
+package com.burchard36.patheticmain;
 
 public interface PatheticPacketCrafter {
 

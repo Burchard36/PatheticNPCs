@@ -1,0 +1,4 @@
+name: PatheticNPCApi
+version: '${project.version}'
+main: com.burchard36.patheticmain.PatheticNPCApi
+api-version: 1.19

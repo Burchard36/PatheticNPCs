@@ -1,6 +1,6 @@
 package com.burchard36.patheticmain;
 
-import com.burchard36.patheticmain.nms.NMSHelper;
+import com.burchard36.patheticmain.nms.NMSGrabber;
 import lombok.Getter;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -24,7 +24,7 @@ public final class PatheticPlugin extends JavaPlugin {
         THREAD_POOL = Executors.newWorkStealingPool();
 
         Bukkit.getLogger().info("Attempting to inject NMS. . .");
-        this.versionSpecificHelper = NMSHelper.get();
+        this.versionSpecificHelper = NMSGrabber.get();
         if (this.versionSpecificHelper == null) {
             Bukkit.getLogger().warning("Your version of Spigot/Paper/Whatever is not supported! You are running: " + Bukkit.getBukkitVersion());
             Bukkit.getLogger().warning("Plugin will now shutdown. . .");
