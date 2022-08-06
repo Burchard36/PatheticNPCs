@@ -1,9 +1,8 @@
-package com.burchard36.patheticmain.util;
+package com.burchard36.main.util;
 
-import com.burchard36.patheticmain.CallbackVoid;
+import com.burchard36.main.callbacks.CallbackVoid;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.Plugin;
-import org.bukkit.plugin.java.JavaPlugin;
 
 import javax.annotation.Nullable;
 

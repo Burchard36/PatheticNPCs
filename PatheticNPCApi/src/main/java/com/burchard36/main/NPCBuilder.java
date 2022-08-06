@@ -1,4 +1,4 @@
-package com.burchard36.patheticmain;
+package com.burchard36.main;
 
 import lombok.Getter;
 import lombok.NonNull;

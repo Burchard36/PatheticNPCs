@@ -1,8 +1,8 @@
-package com.burchard36.patheticmain.nms.v1_19_0;
+package com.burchard36.main.nms.v1_19_0;
 
-import com.burchard36.patheticmain.NMSHelper;
-import com.burchard36.patheticmain.NPCBuilder;
-import com.burchard36.patheticmain.nms.v1_19_0.entity.PatheticPlayer;
+import com.burchard36.main.nms.NMSHelper;
+import com.burchard36.main.NPCBuilder;
+import com.burchard36.main.nms.v1_19_0.entity.PatheticPlayer;
 import net.minecraft.server.level.ServerPlayer;
 import org.bukkit.Bukkit;
 import org.bukkit.Location;

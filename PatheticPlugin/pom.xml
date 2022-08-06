@@ -58,36 +58,36 @@
             <id>spigotmc-repo</id>
             <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
         </repository>
-        <repository>
-            <id>sonatype</id>
-            <url>https://oss.sonatype.org/content/groups/public/</url>
-        </repository>
     </repositories>
 
     <dependencies>
+        <!-- We support at lowest 1.19.0, when the updates stop coming, we support that version and that version only. -->
         <dependency>
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
             <version>1.19-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.18.24</version>
-            <scope>provided</scope>
-        </dependency>
+        <!-- API interfaces -->
         <dependency>
             <groupId>com.burchard36.patheticmain</groupId>
             <artifactId>PatheticNPCApi</artifactId>
             <version>1.0.0</version>
             <scope>compile</scope>
         </dependency>
+        <!-- 1.19.0 NMS-->
         <dependency>
             <groupId>com.burchard36.patheticmain.nms.v1_19_0</groupId>
             <artifactId>Pathetic1_19_R0_1</artifactId>
             <version>1.0.0</version>
             <scope>compile</scope>
+        </dependency>
+        <!-- Lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.24</version>
+            <scope>provided</scope>
         </dependency>
 
     </dependencies>

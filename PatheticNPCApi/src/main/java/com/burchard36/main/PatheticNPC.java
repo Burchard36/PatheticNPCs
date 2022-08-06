@@ -1,11 +1,10 @@
-package com.burchard36.patheticmain;
+package com.burchard36.main;
 
+import com.burchard36.main.callbacks.CallbackVoid;
 import org.bukkit.Location;
 import org.bukkit.entity.EntityType;
 
 import javax.annotation.Nullable;
-import java.nio.file.Path;
-import java.util.UUID;
 
 /**
  * Currently, only PLAYER type NPC's are supported

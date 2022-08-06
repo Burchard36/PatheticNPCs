@@ -1,6 +1,7 @@
-package com.burchard36.patheticmain;
+package com.burchard36.main;
 
-import com.burchard36.patheticmain.nms.NMSGrabber;
+import com.burchard36.main.nms.NMSGrabber;
+import com.burchard36.main.nms.NMSHelper;
 import lombok.Getter;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;

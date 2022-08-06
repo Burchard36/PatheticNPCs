@@ -1,5 +1,6 @@
-package com.burchard36.patheticmain;
+package com.burchard36.main.nms;
 
+import com.burchard36.main.NPCBuilder;
 import org.bukkit.Location;
 import org.bukkit.entity.Player;
 

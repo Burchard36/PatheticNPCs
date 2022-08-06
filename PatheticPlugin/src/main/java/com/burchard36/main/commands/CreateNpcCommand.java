@@ -1,4 +1,4 @@
-package com.burchard36.patheticmain.commands;
+package com.burchard36.main.commands;
 
 import lombok.NonNull;
 import org.bukkit.command.*;
@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import static com.burchard36.patheticmain.PatheticPlugin.ofStr;
+import static com.burchard36.main.PatheticPlugin.ofStr;
 
 /**
  * Command format:

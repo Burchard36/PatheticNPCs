@@ -1,8 +1,8 @@
-package com.burchard36.patheticmain.nms.v1_19_0.entity;
+package com.burchard36.main.nms.v1_19_0.entity;
 
-import com.burchard36.patheticmain.NMSHelper;
-import com.burchard36.patheticmain.CallbackVoid;
-import com.burchard36.patheticmain.PatheticNPC;
+import com.burchard36.main.nms.NMSHelper;
+import com.burchard36.main.callbacks.CallbackVoid;
+import com.burchard36.main.PatheticNPC;
 import com.mojang.authlib.GameProfile;
 import net.minecraft.network.protocol.game.ClientboundAddPlayerPacket;
 import net.minecraft.network.protocol.game.ClientboundPlayerInfoPacket;
@@ -21,8 +21,8 @@ import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicReference;
 
-import static com.burchard36.patheticmain.nms.v1_19_0.NMSHelper1_19_0.THREAD_POOL;
-import static com.burchard36.patheticmain.util.TaskRunner.runTask;
+import static com.burchard36.main.nms.v1_19_0.NMSHelper1_19_0.THREAD_POOL;
+import static com.burchard36.main.util.TaskRunner.runTask;
 
 /**
  * A thread-safe, async-laced, packet-based implementation of a NMS Player

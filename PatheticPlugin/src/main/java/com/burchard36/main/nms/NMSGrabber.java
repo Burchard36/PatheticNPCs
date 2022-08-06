@@ -1,6 +1,5 @@
-package com.burchard36.patheticmain.nms;
+package com.burchard36.main.nms;
 
-import com.burchard36.patheticmain.NMSHelper;
 import org.bukkit.Bukkit;
 
 import java.lang.reflect.InvocationTargetException;
@@ -15,7 +14,7 @@ public class NMSGrabber {
         if (version.contains("1.19.0")) {
 
             try {
-                return (NMSHelper) Class.forName("com.burchard36.patheticmain.nms.v1_19_0.NMSHelper1_19_0").getDeclaredConstructor().newInstance();
+                return (NMSHelper) Class.forName("com.burchard36.main.nms.v1_19_0.NMSHelper1_19_0").getDeclaredConstructor().newInstance();
             } catch (InstantiationException | ClassNotFoundException | NoSuchMethodException |
                      InvocationTargetException | IllegalAccessException e) {
                 throw new RuntimeException(e);
