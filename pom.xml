@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.github.burchard36</groupId>
+    <artifactId>PatheticNPCs</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>PatheticNPCs</name>
+
+    <description>A Completely Async packet based NPC (Player) handler</description>
+    <properties>
+        <PATHETIC_API_VERSION>1.0.2-PRE</PATHETIC_API_VERSION>
+    </properties>
+
+    <build>
+        <defaultGoal>clean package</defaultGoal>
+    </build>
+
+    <modules>
+        <module>PatheticMain</module>
+        <module>Pathetic1_19_R0_1</module>
+    </modules>
+</project>
